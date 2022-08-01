@@ -11,7 +11,7 @@ Public Class PARENT
             query = "insertChild"
             command = New SqlCommand(query, getConnection)
             command.Parameters.AddWithValue("@name", namePere)
-            command.Parameters.AddWithValue("@dateBirth", dateBirth)
+            command.Parameters.AddWithValue("@dateBirth", dateBirthPere)
             command.Parameters.AddWithValue("@lieuNaiss", lieuNaiss)
             command.Parameters.AddWithValue("@sexe", sexe)
             openConnection()

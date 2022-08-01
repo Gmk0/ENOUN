@@ -7,14 +7,14 @@ Public Class ENFANT
     Private table As DataTable
     Public adapter As SqlDataAdapter
 
-    Public Sub insertChild(ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String)
+    Public Sub insertChild(ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexes As String)
         Try
             query = "insertChild"
             command = New SqlCommand(query, getConnection)
             command.Parameters.AddWithValue("@name", name)
             command.Parameters.AddWithValue("@dateBirth", dateBirth)
             command.Parameters.AddWithValue("@lieuNaiss", lieuNaiss)
-            command.Parameters.AddWithValue("@sexe", sexe)
+            command.Parameters.AddWithValue("@sexe", sexes)
             openConnection()
             command.ExecuteNonQuery()
 
