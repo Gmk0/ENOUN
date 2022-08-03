@@ -28,14 +28,14 @@ Partial Class frmliste_enfant
         Me.groupBox2 = New System.Windows.Forms.GroupBox()
         Me.guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.dateDu = New System.Windows.Forms.DateTimePicker()
+        Me.dateAu = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtrecherche = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.datenaisspere = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.groupBox2.SuspendLayout()
         CType(Me.guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -121,8 +121,8 @@ Partial Class frmliste_enfant
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Panel2.Controls.Add(Me.DateTimePicker1)
-        Me.Panel2.Controls.Add(Me.datenaisspere)
+        Me.Panel2.Controls.Add(Me.dateDu)
+        Me.Panel2.Controls.Add(Me.dateAu)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.txtrecherche)
@@ -131,6 +131,50 @@ Partial Class frmliste_enfant
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1160, 44)
         Me.Panel2.TabIndex = 232
+        '
+        'dateDu
+        '
+        Me.dateDu.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dateDu.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateDu.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dateDu.Location = New System.Drawing.Point(765, 11)
+        Me.dateDu.Name = "dateDu"
+        Me.dateDu.Size = New System.Drawing.Size(143, 23)
+        Me.dateDu.TabIndex = 232
+        '
+        'dateAu
+        '
+        Me.dateAu.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dateAu.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateAu.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dateAu.Location = New System.Drawing.Point(979, 11)
+        Me.dateAu.Name = "dateAu"
+        Me.dateAu.Size = New System.Drawing.Size(143, 23)
+        Me.dateAu.TabIndex = 231
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Gray
+        Me.Label2.Location = New System.Drawing.Point(930, 13)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(29, 18)
+        Me.Label2.TabIndex = 230
+        Me.Label2.Text = "Au"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gray
+        Me.Label1.Location = New System.Drawing.Point(558, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(205, 18)
+        Me.Label1.TabIndex = 229
+        Me.Label1.Text = "Date d'enregistrement du :"
         '
         'txtrecherche
         '
@@ -178,50 +222,6 @@ Partial Class frmliste_enfant
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "Liste des enfants"
         '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Gray
-        Me.Label1.Location = New System.Drawing.Point(558, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(205, 18)
-        Me.Label1.TabIndex = 229
-        Me.Label1.Text = "Date d'enregistrement du :"
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Gray
-        Me.Label2.Location = New System.Drawing.Point(930, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(29, 18)
-        Me.Label2.TabIndex = 230
-        Me.Label2.Text = "Au"
-        '
-        'datenaisspere
-        '
-        Me.datenaisspere.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.datenaisspere.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datenaisspere.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datenaisspere.Location = New System.Drawing.Point(979, 11)
-        Me.datenaisspere.Name = "datenaisspere"
-        Me.datenaisspere.Size = New System.Drawing.Size(143, 23)
-        Me.datenaisspere.TabIndex = 231
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(765, 11)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(143, 23)
-        Me.DateTimePicker1.TabIndex = 232
-        '
         'frmliste_enfant
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -253,6 +253,6 @@ Partial Class frmliste_enfant
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents datenaisspere As DateTimePicker
+    Friend WithEvents dateDu As DateTimePicker
+    Friend WithEvents dateAu As DateTimePicker
 End Class
