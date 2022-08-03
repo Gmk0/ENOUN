@@ -93,7 +93,9 @@
     <Compile Include="Connexion\dbconnexion.vb" />
     <Compile Include="Connexion\developpement.vb" />
     <Compile Include="Connexion\elieconnexion.vb" />
+    <Compile Include="Controller\ActeNaissController.vb" />
     <Compile Include="Controller\EnfantController.vb" />
+    <Compile Include="Controller\GetActeNaissance.vb" />
     <Compile Include="Controller\UserController.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -115,7 +117,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="model\ENFANT.vb" />
-    <Compile Include="model\PARENT.vb" />
+    <Compile Include="model\ActeNaissance.vb" />
     <Compile Include="model\Users.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

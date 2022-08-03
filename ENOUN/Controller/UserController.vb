@@ -9,7 +9,7 @@
             MsgBox("veuillez remplir tous les champs", MsgBoxStyle.Critical)
         Else
             If user.insertUsers(name, phoneUser, posteUser, adressUser, MotPasseUser) Then
-                MsgBox("le nouveau utilisateur a ete enregistrer avec success"
+                MsgBox("le nouveau utilisateur a ete enregistrer avec success")
             Else
                 MsgBox("impossible d'enregistrer l'enfant ")
             End If
@@ -22,7 +22,7 @@
             MsgBox("veuillez remplir tous les champs", MsgBoxStyle.Critical)
         Else
             If user.insertUsers(name, phoneUser, posteUser, adressUser, MotPasseUser) Then
-                MsgBox("le nouveau utilisateur a ete enregistrer avec success"
+                MsgBox("le nouveau utilisateur a ete enregistrer avec success")
             Else
                 MsgBox("impossible d'enregistrer l'enfant ")
             End If
@@ -47,13 +47,11 @@
     End Sub
 
     Public Sub chargementEnfant(ByVal datagrid As DataGridView)
-        table = Enfant.ShowChild()
-        datagrid.DataSource = table
+
     End Sub
 
     Public Sub chargementEnfant(ByVal datagrid As DataGridView, ByVal name As String)
-        table = Enfant.ShowChildBySearch(name)
-        datagrid.DataSource = table
+
     End Sub
 
 

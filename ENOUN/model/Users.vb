@@ -31,7 +31,7 @@ Public Class Users
     End Function
     Public Function UpdateUser(ByVal id As String, ByVal nameUser As String, ByVal phoneUser As String, ByVal posteUser As String, ByVal adressUser As String, ByVal MotPasseUser As String)
         Try
-            query = "insertChild"
+            query = "insertUser"
             command = New SqlCommand(query, getConnection)
             command.Parameters.AddWithValue("@id", id)
             command.Parameters.AddWithValue("@nameUser", nameUser)
@@ -52,23 +52,27 @@ Public Class Users
             Return False
         End Try
     End Function
-    Public Sub DeleteUser(ByVal id As String)
+    Public Function DeleteUser(ByVal id As String)
         Try
             query = "delete from child where id=@id"
             command = New SqlCommand(query, getConnection)
             command.Parameters.AddWithValue("@id", id)
 
             openConnection()
-            command.ExecuteNonQuery()
+            If command.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
 
             closeConnection()
         Catch ex As Exception
             MsgBox(ex.Message)
-
+            Return False
         End Try
-    End Sub
+    End Function
 
-    Public Function ShowParent() As DataTable
+    Public Function ShowUser() As DataTable
         Try
             query = ""
             command = New SqlCommand(query, getConnection)

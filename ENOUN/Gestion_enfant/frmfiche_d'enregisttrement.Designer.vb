@@ -22,26 +22,21 @@ Partial Class frmfiche_d_enregisttrement
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.cmbsexe = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.txtprofession = New System.Windows.Forms.TextBox()
         Me.date1 = New System.Windows.Forms.DateTimePicker()
-        Me.datenaisenre = New System.Windows.Forms.DateTimePicker()
         Me.datenaissen = New System.Windows.Forms.DateTimePicker()
-        Me.txtadresse1 = New System.Windows.Forms.TextBox()
         Me.txtnomenf = New System.Windows.Forms.TextBox()
         Me.txtne1 = New System.Windows.Forms.TextBox()
         Me.txtquali = New System.Windows.Forms.TextBox()
@@ -49,9 +44,9 @@ Partial Class frmfiche_d_enregisttrement
         Me.txtoffice = New System.Windows.Forms.TextBox()
         Me.txtpar = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.txtvol = New System.Windows.Forms.TextBox()
         Me.txtnum = New System.Windows.Forms.TextBox()
@@ -101,21 +96,20 @@ Partial Class frmfiche_d_enregisttrement
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Label30 = New System.Windows.Forms.Label()
+        Me.guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnsupprimer = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnsupprimer = New Guna.UI2.WinForms.Guna2Button()
         Me.GroupBox3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
         CType(Me.guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -178,33 +172,11 @@ Partial Class frmfiche_d_enregisttrement
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Gray
-        Me.Label7.Location = New System.Drawing.Point(15, 297)
+        Me.Label7.Location = New System.Drawing.Point(11, 42)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(179, 19)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Date d'enregistrement"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Gray
-        Me.Label8.Location = New System.Drawing.Point(17, 470)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(83, 19)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Profession"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Gray
-        Me.Label9.Location = New System.Drawing.Point(15, 421)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 19)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Résident à"
         '
         'cmbsexe
         '
@@ -212,9 +184,9 @@ Partial Class frmfiche_d_enregisttrement
         Me.cmbsexe.ForeColor = System.Drawing.Color.Gray
         Me.cmbsexe.FormattingEnabled = True
         Me.cmbsexe.Items.AddRange(New Object() {"", "M", "F"})
-        Me.cmbsexe.Location = New System.Drawing.Point(230, 331)
+        Me.cmbsexe.Location = New System.Drawing.Point(234, 305)
         Me.cmbsexe.Name = "cmbsexe"
-        Me.cmbsexe.Size = New System.Drawing.Size(216, 24)
+        Me.cmbsexe.Size = New System.Drawing.Size(208, 24)
         Me.cmbsexe.TabIndex = 13
         '
         'Label13
@@ -222,7 +194,7 @@ Partial Class frmfiche_d_enregisttrement
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Gray
-        Me.Label13.Location = New System.Drawing.Point(15, 331)
+        Me.Label13.Location = New System.Drawing.Point(20, 305)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(46, 19)
         Me.Label13.TabIndex = 14
@@ -233,7 +205,7 @@ Partial Class frmfiche_d_enregisttrement
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Gray
-        Me.Label14.Location = New System.Drawing.Point(15, 372)
+        Me.Label14.Location = New System.Drawing.Point(15, 345)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(206, 19)
         Me.Label14.TabIndex = 15
@@ -242,12 +214,8 @@ Partial Class frmfiche_d_enregisttrement
         'GroupBox3
         '
         Me.GroupBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox3.Controls.Add(Me.txtprofession)
         Me.GroupBox3.Controls.Add(Me.date1)
-        Me.GroupBox3.Controls.Add(Me.datenaisenre)
         Me.GroupBox3.Controls.Add(Me.datenaissen)
-        Me.GroupBox3.Controls.Add(Me.txtadresse1)
-        Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Controls.Add(Me.txtnomenf)
         Me.GroupBox3.Controls.Add(Me.txtne1)
         Me.GroupBox3.Controls.Add(Me.txtquali)
@@ -255,7 +223,6 @@ Partial Class frmfiche_d_enregisttrement
         Me.GroupBox3.Controls.Add(Me.txtoffice)
         Me.GroupBox3.Controls.Add(Me.txtpar)
         Me.GroupBox3.Controls.Add(Me.Label27)
-        Me.GroupBox3.Controls.Add(Me.Label26)
         Me.GroupBox3.Controls.Add(Me.cmbsexe)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.Label25)
@@ -263,7 +230,6 @@ Partial Class frmfiche_d_enregisttrement
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label4)
-        Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.Controls.Add(Me.Label7)
@@ -276,15 +242,6 @@ Partial Class frmfiche_d_enregisttrement
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Enfant"
         '
-        'txtprofession
-        '
-        Me.txtprofession.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtprofession.ForeColor = System.Drawing.Color.Gray
-        Me.txtprofession.Location = New System.Drawing.Point(230, 470)
-        Me.txtprofession.Name = "txtprofession"
-        Me.txtprofession.Size = New System.Drawing.Size(216, 23)
-        Me.txtprofession.TabIndex = 36
-        '
         'date1
         '
         Me.date1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -293,15 +250,6 @@ Partial Class frmfiche_d_enregisttrement
         Me.date1.Name = "date1"
         Me.date1.Size = New System.Drawing.Size(216, 23)
         Me.date1.TabIndex = 35
-        '
-        'datenaisenre
-        '
-        Me.datenaisenre.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datenaisenre.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datenaisenre.Location = New System.Drawing.Point(230, 295)
-        Me.datenaisenre.Name = "datenaisenre"
-        Me.datenaisenre.Size = New System.Drawing.Size(216, 23)
-        Me.datenaisenre.TabIndex = 34
         '
         'datenaissen
         '
@@ -312,22 +260,11 @@ Partial Class frmfiche_d_enregisttrement
         Me.datenaissen.Size = New System.Drawing.Size(216, 23)
         Me.datenaissen.TabIndex = 20
         '
-        'txtadresse1
-        '
-        Me.txtadresse1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtadresse1.ForeColor = System.Drawing.Color.Gray
-        Me.txtadresse1.Location = New System.Drawing.Point(230, 410)
-        Me.txtadresse1.Multiline = True
-        Me.txtadresse1.Name = "txtadresse1"
-        Me.txtadresse1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtadresse1.Size = New System.Drawing.Size(216, 45)
-        Me.txtadresse1.TabIndex = 33
-        '
         'txtnomenf
         '
         Me.txtnomenf.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnomenf.ForeColor = System.Drawing.Color.Gray
-        Me.txtnomenf.Location = New System.Drawing.Point(230, 361)
+        Me.txtnomenf.Location = New System.Drawing.Point(234, 343)
         Me.txtnomenf.Multiline = True
         Me.txtnomenf.Name = "txtnomenf"
         Me.txtnomenf.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -392,17 +329,6 @@ Partial Class frmfiche_d_enregisttrement
         Me.Label27.TabIndex = 7
         Me.Label27.Text = "Par devant nous "
         '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.ForeColor = System.Drawing.Color.Gray
-        Me.Label26.Location = New System.Drawing.Point(11, 42)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(45, 19)
-        Me.Label26.TabIndex = 6
-        Me.Label26.Text = "Date"
-        '
         'Label25
         '
         Me.Label25.AutoSize = True
@@ -423,6 +349,18 @@ Partial Class frmfiche_d_enregisttrement
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1320, 40)
         Me.Panel1.TabIndex = 21
+        '
+        'Label30
+        '
+        Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.Gray
+        Me.Label30.Location = New System.Drawing.Point(543, 6)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(234, 28)
+        Me.Label30.TabIndex = 10
+        Me.Label30.Text = "Acte de Naissance"
         '
         'GroupBox4
         '
@@ -976,89 +914,10 @@ Partial Class frmfiche_d_enregisttrement
         Me.GroupBox5.TabIndex = 27
         Me.GroupBox5.TabStop = False
         '
-        'Label30
-        '
-        Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.Gray
-        Me.Label30.Location = New System.Drawing.Point(543, 6)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(234, 28)
-        Me.Label30.TabIndex = 10
-        Me.Label30.Text = "Acte de Naissance"
-        '
-        'GroupBox6
-        '
-        Me.GroupBox6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox6.Controls.Add(Me.Guna2Button1)
-        Me.GroupBox6.Controls.Add(Me.Guna2Button3)
-        Me.GroupBox6.Controls.Add(Me.Guna2Button2)
-        Me.GroupBox6.Controls.Add(Me.btnsupprimer)
-        Me.GroupBox6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox6.ForeColor = System.Drawing.Color.Gray
-        Me.GroupBox6.Location = New System.Drawing.Point(854, 595)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(452, 94)
-        Me.GroupBox6.TabIndex = 28
-        Me.GroupBox6.TabStop = False
-        '
-        'Guna2Button2
-        '
-        Me.Guna2Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Button2.BorderRadius = 15
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(346, 30)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(96, 35)
-        Me.Guna2Button2.TabIndex = 232
-        Me.Guna2Button2.Text = "Supprimer"
-        '
-        'btnsupprimer
-        '
-        Me.btnsupprimer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnsupprimer.BorderRadius = 15
-        Me.btnsupprimer.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnsupprimer.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnsupprimer.ForeColor = System.Drawing.Color.White
-        Me.btnsupprimer.Location = New System.Drawing.Point(234, 30)
-        Me.btnsupprimer.Name = "btnsupprimer"
-        Me.btnsupprimer.Size = New System.Drawing.Size(96, 35)
-        Me.btnsupprimer.TabIndex = 231
-        Me.btnsupprimer.Text = "Modifier"
-        '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Button1.BorderRadius = 15
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(122, 30)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(96, 35)
-        Me.Guna2Button1.TabIndex = 234
-        Me.Guna2Button1.Text = "Vider"
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Button3.BorderRadius = 15
-        Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(10, 30)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(96, 35)
-        Me.Guna2Button3.TabIndex = 233
-        Me.Guna2Button3.Text = "Enregistrer"
-        '
         'guna2DataGridView1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        Me.guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
         Me.guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1067,23 +926,23 @@ Partial Class frmfiche_d_enregisttrement
         Me.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.guna2DataGridView1.ColumnHeadersHeight = 25
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle9
         Me.guna2DataGridView1.EnableHeadersVisualStyles = False
         Me.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.guna2DataGridView1.Location = New System.Drawing.Point(7, 18)
@@ -1115,6 +974,73 @@ Partial Class frmfiche_d_enregisttrement
         Me.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.BurlyWood
         '
+        'GroupBox6
+        '
+        Me.GroupBox6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.GroupBox6.Controls.Add(Me.Guna2Button1)
+        Me.GroupBox6.Controls.Add(Me.Guna2Button3)
+        Me.GroupBox6.Controls.Add(Me.Guna2Button2)
+        Me.GroupBox6.Controls.Add(Me.btnsupprimer)
+        Me.GroupBox6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox6.ForeColor = System.Drawing.Color.Gray
+        Me.GroupBox6.Location = New System.Drawing.Point(854, 595)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(452, 94)
+        Me.GroupBox6.TabIndex = 28
+        Me.GroupBox6.TabStop = False
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Button1.BorderRadius = 15
+        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(122, 30)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(96, 35)
+        Me.Guna2Button1.TabIndex = 234
+        Me.Guna2Button1.Text = "Vider"
+        '
+        'Guna2Button3
+        '
+        Me.Guna2Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Button3.BorderRadius = 15
+        Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.Location = New System.Drawing.Point(10, 30)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.Size = New System.Drawing.Size(96, 35)
+        Me.Guna2Button3.TabIndex = 233
+        Me.Guna2Button3.Text = "Enregistrer"
+        '
+        'Guna2Button2
+        '
+        Me.Guna2Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Button2.BorderRadius = 15
+        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.Location = New System.Drawing.Point(346, 30)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.Size = New System.Drawing.Size(96, 35)
+        Me.Guna2Button2.TabIndex = 232
+        Me.Guna2Button2.Text = "Supprimer"
+        '
+        'btnsupprimer
+        '
+        Me.btnsupprimer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnsupprimer.BorderRadius = 15
+        Me.btnsupprimer.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnsupprimer.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnsupprimer.ForeColor = System.Drawing.Color.White
+        Me.btnsupprimer.Location = New System.Drawing.Point(234, 30)
+        Me.btnsupprimer.Name = "btnsupprimer"
+        Me.btnsupprimer.Size = New System.Drawing.Size(96, 35)
+        Me.btnsupprimer.TabIndex = 231
+        Me.btnsupprimer.Text = "Modifier"
+        '
         'frmfiche_d_enregisttrement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1143,8 +1069,8 @@ Partial Class frmfiche_d_enregisttrement
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox6.ResumeLayout(False)
         CType(Me.guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox6.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1155,15 +1081,11 @@ Partial Class frmfiche_d_enregisttrement
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents cmbsexe As ComboBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents datenaisenre As DateTimePicker
     Friend WithEvents datenaissen As DateTimePicker
-    Friend WithEvents txtadresse1 As TextBox
     Friend WithEvents txtnomenf As TextBox
     Friend WithEvents txtne1 As TextBox
     Friend WithEvents txtquali As TextBox
@@ -1171,10 +1093,8 @@ Partial Class frmfiche_d_enregisttrement
     Friend WithEvents txtoffice As TextBox
     Friend WithEvents txtpar As TextBox
     Friend WithEvents Label27 As Label
-    Friend WithEvents Label26 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents date1 As DateTimePicker
-    Friend WithEvents txtprofession As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents txtvol As TextBox
