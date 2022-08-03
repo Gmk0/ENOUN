@@ -7,7 +7,7 @@ Public Class ENFANT
     Private table As DataTable
     Public adapter As SqlDataAdapter
 
-    Public Sub insertChild(ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String)
+    Public Function insertChild(ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String, ByVal idParent As String)
         Try
             query = "insertChild"
             command = New SqlCommand(query, getConnection)
@@ -15,16 +15,22 @@ Public Class ENFANT
             command.Parameters.AddWithValue("@dateBirth", dateBirth)
             command.Parameters.AddWithValue("@lieuNaiss", lieuNaiss)
             command.Parameters.AddWithValue("@sexe", sexe)
+            command.Parameters.AddWithValue("@sexe", idParent)
             openConnection()
-            command.ExecuteNonQuery()
+            If command.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
 
             closeConnection()
         Catch ex As Exception
             MsgBox(ex.Message)
+            Return False
 
         End Try
-    End Sub
-    Public Sub updateChild(ByVal id As String, ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String)
+    End Function
+    Public Function updateChild(ByVal id As String, ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String, ByVal idparent As String)
         Try
             query = "insertChild"
             command = New SqlCommand(query, getConnection)
@@ -33,15 +39,20 @@ Public Class ENFANT
             command.Parameters.AddWithValue("@dateBirth", dateBirth)
             command.Parameters.AddWithValue("@lieuNaiss", lieuNaiss)
             command.Parameters.AddWithValue("@sexe", sexe)
+            command.Parameters.AddWithValue("@idparent", idparent)
             openConnection()
-            command.ExecuteNonQuery()
+            If command.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
 
             closeConnection()
         Catch ex As Exception
             MsgBox(ex.Message)
-
+            Return False
         End Try
-    End Sub
+    End Function
 
     Public Function ShowChildByDate() As DataTable
         Try
@@ -85,21 +96,25 @@ Public Class ENFANT
 
         End Try
     End Function
-    Public Sub DeleteChild(ByVal id As String)
+    Public Function DeleteChild(ByVal id As String)
         Try
             query = "delete from child where id=@id"
             command = New SqlCommand(query, getConnection)
             command.Parameters.AddWithValue("@id", id)
 
             openConnection()
-            command.ExecuteNonQuery()
+            If command.ExecuteNonQuery() Then
+                Return True
+            Else
+                Return False
+            End If
 
             closeConnection()
         Catch ex As Exception
             MsgBox(ex.Message)
-
+            Return False
         End Try
-    End Sub
+    End Function
     Public Function ShowChildBySearch(ByVal name As String) As DataTable
         Try
             query = "Select * From child where Name LIKE '%@name%'"
