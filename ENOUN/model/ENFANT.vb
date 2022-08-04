@@ -29,7 +29,7 @@ Public Class ENFANT
             Return False
 
         End Try
-    End Function
+        End Function
     Public Function updateChild(ByVal id As String, ByVal name As String, ByVal dateBirth As String, ByVal lieuNaiss As String, ByVal sexe As String, ByVal idparent As String)
         Try
             query = "insertChild"
